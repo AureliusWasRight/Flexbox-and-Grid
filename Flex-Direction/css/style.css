@@ -1,0 +1,25 @@
+/* Flex Container => Parent */
+ul {
+    background-color: lightslategray;
+    padding: 20px;
+
+    /* Flex Container Properties */
+    display: flex;
+    /* Adding Flex Direction */
+    /* 1.1 Row Default */
+    /* flex-direction: row */
+    /* 1.2 Row reverse (Default reverse) */
+    /* flex-direction: row-reverse; */
+    /* 1.3 column */
+    flex-direction: column;
+}
+
+/* Flex Items => Children */
+li {
+    list-style: none;
+    color: white;
+    background-color: #20b2aa;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+}

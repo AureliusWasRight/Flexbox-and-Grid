@@ -1,0 +1,25 @@
+/* Flex Container => Parent */
+ul {
+    background-color: lightslategray;
+    padding: 20px;
+
+    /* Flex Container Properties */
+    display: flex;
+
+    /* Default value of wrap is nowrap */
+    /* flex-wrap: nowrap; */
+    /* Wrap allows for automatic responsivness */
+    /* flex-wrap: wrap; */
+    /* Wrap-reverse makes last element go up top */
+    flex-wrap: wrap-reverse;
+}
+
+/* Flex Items => Children */
+li {
+    list-style: none;
+    color: white;
+    background-color: #20b2aa;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+}
