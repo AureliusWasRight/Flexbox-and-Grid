@@ -1,0 +1,51 @@
+/* Flex Container => Parent */
+ul {
+    background-color: lightslategray;
+    padding: 20px;
+    height: 300px;
+
+    /* Flex Container Properties */
+    display: flex;
+    /* Default direction is row => Main Axis is horizontal */
+
+    flex-wrap: wrap;
+
+    /* Align items along the CROSS axis (Y)
+       Default direction is Column for Y axis */
+    /* Stretch is default */
+    /* Requires specified height for the parent */
+    /* If the children have height
+       defualt Stretch behaviour is not used */
+    /* align-items: stretch; */
+
+    /* Flex-Start */
+    /* align-items: flex-start; */
+
+    /* Flex-End */
+    /* align-items: flex-end; */
+
+    /* Center */
+    /* align-items: center; */
+
+    /* Baseline */
+    align-items: baseline;
+}
+/* Flex Items => Children */
+li {
+    list-style: none;
+    color: white;
+    background-color: #20b2aa;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    height: 100px; /* Comment for  stretch to work*/
+    padding-top: 20px; /* Comment for  baseline to work*/
+    padding-bottom: 20px; /* Comment for  baseline to work*/
+}
+
+/* custom padding for baseline to work*/
+li:first-child {
+    padding: 10px;
+}
