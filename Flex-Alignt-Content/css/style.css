@@ -4,13 +4,14 @@ ul {
     padding: 20px;
     height: 600px;
 
+    /* To Perfect center use
+       display: flex;
+       algin-items: center;
+       justiy-content: center */
     /* Flex Container Properties */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
     /* Align-content deals with multiline flex container */
     /* Default value is stretch */
     /* Takes into consideration the Y axis */
@@ -18,14 +19,14 @@ ul {
     /* Stretch */
     /* align-content: stretch; */
 
-    /* Flex-start */
-    /* align-content: flex-start; */
-
     /* Flex-start, counts elemnts as a GROUP */
     /* align-content: flex-start; */
 
     /* Flex end */
     /* align-content: flex-end; */
+
+    /* Flex center */
+    align-content: center;
 
     /* Space-between */
     /* align-content: space-between; */
@@ -34,7 +35,7 @@ ul {
     /* align-content: space-around; */
 
     /* Space evenly same x width along the Y axis */
-    align-content: space-evenly;
+    /* align-content: space-evenly; */
 }
 /* Flex Items => Children */
 li {
