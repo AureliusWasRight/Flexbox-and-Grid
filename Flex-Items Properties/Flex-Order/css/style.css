@@ -1,0 +1,50 @@
+/* Flex Container => Parent */
+ul {
+    background-color: lightslategray;
+    padding: 20px;
+    height: 300px;
+
+    /* Flex Container Properties */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Flex Items => Children */
+li {
+    list-style: none;
+    color: white;
+    background-color: #20b2aa;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Flex Items Properties => Children */
+/* Default = 0, can be positive or negative and is located
+    on the main axis, if flex-drieciton is column it swaps to vertical
+ */
+
+/* When the Flex Direction is Row/Column */
+/* Works like a number axis -1 0 1 */
+/* Higher order - flex-end, Lower Flex-Start */
+li:nth-child(3) {
+    order: 1;
+}
+
+li:nth-child(1) {
+    order: 3;
+}
+
+li:nth-child(6) {
+    order: 2;
+}
+
+li:nth-child(5) {
+    order: 5;
+}
+
+li:nth-child(8) {
+    order: -1;
+}
